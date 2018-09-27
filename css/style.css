@@ -1,90 +1,85 @@
-
-
-
+* {
+	margin: 0;
+	padding: 0;
+}
 
 .container {
 	width: 1280px;
-	height: 3186px;
-	border-left: 50px;
-	border-right: 50px;
+	/*height: 3186px;*/
+	margin: 0 auto;
 }
 /*блок Product name: h1, p, checkmark, Product img, */
 .Product {
-	width: 1180px;
-	height: 220px;                   /*было273px*/
 	background: #445162;
 	display: flex;
 	flex-wrap: wrap;
-	border-bottom: #445162 solid 54px;
-	border-left: #445162 solid 50px;
-	border-right: #445162 solid 50px;
-	border-top: #445162 solid 51px;
+	border: #445162 solid 50px;
+	justify-content: space-between;
 }
 
-
-.flex-product {
+.product-name {
 	width: 590px;
-	height: 273px;
+	height: 214px;	
 }
 
-.flex-product h1 {
+.product-name h1 {
 	text-align: left;
 	font-size: 60px;
 	font-family: "Arial";
 	font-weight: normal;
 	color: rgb(255, 255, 255);
-	line-height: 0.9;
-	margin-top: 0px;
-}
-
-.flex-product li {
-  font-size: 20px;
-  font-family: "Arial";
-  color: rgb(255, 255, 255);
-  line-height: 1.8;
-  text-align: left;
-  margin-left: -45px;
+	line-height: 0.8;
+	margin-bottom: 40px;
 }
 ul {
 	list-style: none;
-	
 }
 .checkmark:before {
 	content: url("../img/checkmark.png");
-	margin: 5px;	
+	margin: 0px;
+	margin-right: 10px;                /*отступ между маркером галочка и текстом не точно*/
 }
-	
 
-.flex-product figure {
-	margin-right: 0;
+.product-name li {
+  font-size: 20px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.7;
+  text-align: left;
+  /*margin-left: 15px;*/
+}
+
+.logo {
+	display: block;
+	height: 214px;
+	width: 469px;
+	margin-left: 121px;
 	margin-top: 0;
 	float: right;
 }
 
-
 /*блок About your Product: h2, p, img */
 .About {
-	width: 1180px;
-	height: 245px; 
+	/*width: 1180px;
+	height: 245px; */
 	background: #fff;
 	display: flex;
 	flex-wrap: wrap;
-	border-top: #fff solid 49px;
-	border-bottom: #fff solid 49px;
-	border-left: #fff solid 50px;
-	border-right: #fff solid 50px;
+	border: #fff solid 50px;
+	justify-content: space-between;
 }
 .description {
 	width: 655px;
-	height: 344px;
+	height: 246px;
 }
 
 .description h2 {
   font-size: 30px;
   font-family: "Arial";
   color: rgb(68, 81, 97);
-  line-height: 0.2;
+  line-height: 0.7;
   text-align: left;
+  margin-bottom: 36px;
 }
 
 .description p {
@@ -93,114 +88,104 @@ ul {
   color: rgb(51, 51, 51);
   line-height: 1.5;
   text-align: left;
+  margin-bottom: 24px;
 }
 
-.video img {
-	margin-right: 0;
+.video {
+	display: block;
+	width: 430px;
+	height: 246px;
+	margin-left: 95px;
 	margin-top: 0;
 	float: right;
 }
-.video {
-	width: 525px;
-	height: 246px;
-	
-}
 
 /*блок Dignity and pluses Product: h2, Dignity, .flexplus img, .flexplus */
-h2 {
+.Dignity {
+	background: #f5f5f5;
+	display: flex;
+	flex-wrap: wrap;
+	border: #f5f5f5 solid 50px;
+	justify-content: space-between;
+}
+
+.Dignity-header {
+	width: 100%;
 	text-align: center;
 	font-size: 30px;
 	font-family: "Arial";
 	color: rgb(68, 81, 97);
 	line-height: 1.2;
+	padding-bottom: 30px;
 }
 
-
-.Dignity {
-	width: 1180px;
-	height: 419px; 
-	background: #f5f5f5;
-	display: flex;
-	flex-wrap: wrap;
-	border-left: #f5f5f5 solid 50px;
-	border-right: #f5f5f5 solid 50px;
-	/*border-top: #f5f5f5 solid 49px;*/
-	/*border-bottom: #fff 50px;* ниже д.б.белый border 50px ,не получается */
-}
-
-.flexplus img {
-	margin-right: 10px;
-	margin-bottom: 40px;
-	float: left;
-}
-.flexplus {
-	width: 590px;
+.Dignity-child {
+	width: 50%;
 	height: 100px;
 	font-size: 16px;
 	font-family: "Arial";
 	line-height: 1.5;
 	color: rgb(51, 51, 51);
+	float: right;
 }
-
-.flexplus p {
-	margin: 0px;
-	padding: 0px;
-	text-align: top;
+.plus:before {
+	content: url("../img/Plus.png");
+	margin-right: 10px;	
 	
 }
-
-
 
 
 /*блок Scrinshots: .Scrinshots, .flexscreen img, .flexscreen, h3 */
 
 
 .Scrinshots {
-	
-	width: 1180px;
-	height: 419px; 
 	background: #fff;
 	display: flex;
 	flex-wrap: wrap;
-	border-left: #fff solid 50px;
-	border-right: #fff solid 50px;
+	border: #fff solid 50px;
+	justify-content: space-between;
+}
+.Scrinshots-header {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Arial";
+	color: rgb(68, 81, 97);
+	line-height: 1.2;
+	padding-bottom: 35px;
 }
 .flexscrin img {
-	
 	margin-right: 15px;
 	float: left;
 	/*alighn: bottom;*/
 	margin-bottom: 20px;
 }
 .flexscrin {
-	/*position: relative;*/
-	width: 590px;
+	width: 50%;
 	height: 150px;
 	font-size: 16px;
 	font-family: "Arial";
 	color: rgb(51, 51, 51);
 	line-height: 1.5;
-	margin-top: 0;
-	
-	/*text-align: top;*/
-	
+	float: right;
+	padding-bottom: 30px;
 }
 
-h3 {
+.flexscrin h3 {
 	font-size: 24px;
 	font-family: "Arial";
 	color: rgb(68, 81, 97);
-	line-height: 1.25;
+	line-height: 0.9;
 	text-align: top;
-	margin-top: 0px;
 	margin-bottom: 5px;
 }
-.scrin {
+/*.scrin {
 	background: #fff;
-}
+}*/
 
 /*блок Reviews: .Reviews, .flexreview, h2  */
-h2 {
+.Reviews-header {
+	width: 100%;
 	text-align: center;
 	font-size: 30px;
 	font-family: "Arial";
@@ -214,8 +199,7 @@ h2 {
 	background: #f5f5f5;
 	display: flex;
 	flex-wrap: wrap;
-	border-left: #f5f5f5 solid 50px;
-	border-right: #f5f5f5 solid 50px;
+	border: #f5f5f5 solid 50px;
 }
 
 
@@ -246,8 +230,6 @@ h2 {
 	margin-top: 25px;
 }
 
-
-
 .flexreview p {
 	font-size: 14px;
 	font-family: "Arial";
@@ -256,7 +238,7 @@ h2 {
 	line-height: 1.286;
 	text-align: left;
 	position	: absolute;
-	top		: 20px;
+	top		: 30px;
 	left		: 100px;
 	right: 50px;
 	/*width		: 100%;*/
@@ -283,7 +265,14 @@ h2 {
 	border-right: #fff solid 50px;
 	border-bottom: #fff solid 50px;
 }
-
+.BuyIt-header {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Arial";
+	color: rgb(68, 81, 97);
+	line-height: 1.2;
+}
 
 .BuyIt h3 {                   /*заголовки h3*/
 	text-align: center;
@@ -291,8 +280,9 @@ h2 {
 	font-family: "Arial";
 	color: rgb(255, 255, 255);
 	line-height: 1.25;
-	
-  
+	margin-top: 16px;
+	margin-bottom: 16px;
+	font-weight: normal;
 }
 .Standart {         
 	position: absolute; 
@@ -301,8 +291,8 @@ h2 {
 	height: 306px;
 	width: 300px;
 	background: #445162;
+	border-radius: 5px;
 }
-
 .Premium {
 	position: absolute; 
 	bottom: 0; 
@@ -310,8 +300,8 @@ h2 {
 	height: 404px;
 	width: 300px;
 	background: #445162;
+	border-radius: 5px;
 }
-
 .Lux {
 	position: absolute; 
 	bottom: 0; 
@@ -319,25 +309,61 @@ h2 {
 	height: 500px;
 	width: 300px;
 	background: #445162;
+	border-radius: 5px;
 }
-
-
-
+.BuyIt ol {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .BuyIt li {
 	font-size: 14px;
 	font-family: "Arial";
 	color: rgb(255, 255, 255);
 	line-height: 1.714;
 	text-align: left;
-	margin-left: -10px;
+	margin-left: 40px;
 }
+/*.price p {
+	font-size: 40px;
+	font-family: "Arial";
+	color: #445162;                      
+	line-height: 0.75;
+	text-align: center;
+	padding-top: 18px;
+	margin-bottom: 18px;
+}*/
 
 .price {
 	font-size: 40px;
 	font-family: "Arial";
-	color: white;                      /*#445162*/
+	color: #445162;                      
 	line-height: 0.75;
 	text-align: center;
+	height: 70px;
+	width: 296px;
+	background: white;
+	border-left: solid 2px #445162;
+	border-right: solid 2px #445162;
+	padding-top: 18px;
+	/*vertical-align: center;*/
+	/*padding-bottom: 18px;*/
+}
+
+.buttonBuy {
+	height: 40px;
+	width: 200px;
+	color: #445162;
+	background: #fff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	outline: none; 
+	text-align: center;
+	/*vertical-align: center;*/
+	/*margin-bottom: 20px;*/
+	/*padding-bottom: 20px;*/         
+	padding-top: 10px;
+	/*padding-left: 20px;*
+	/*margin-right: 20px;*/
 }
 
 /*блок Contacts:                       */
@@ -345,20 +371,21 @@ h2 {
 .Contacts {
 	position: relative; 
 	width: 1180px;
-	height: 354px; 
+	height: 354px;                     /*как не выставлять высоту родит.элемента?*/ 
 	background: #445162;
 	border-left: #445162 solid 50px;
 	border-right: #445162 solid 50px;
 	border-bottom: #445162 solid 100px;
-	border-top: #445162 solid 23px;		
+	border-top: #445162 solid 50px;		/*почему то 23px было?*/
 }
-.Contacts h2 {
+.Contacts-header {
 	text-align: center;
 	font-size: 30px;
 	font-family: "Arial";
+	font-weight: normal;         /*либо не тот шрифт либо не то начертание, сейчас жирный*/
 	color: #fff;
 	line-height: 1.2;
-
+	padding-bottom: 15px;        /*замерить точно в фотошоп*/
 }
 .InputData {
 	position: absolute;
@@ -371,30 +398,68 @@ input[type="text"], input[type="Email"]  {
 	height: 40px;
 	width: 500px;
 	border-radius: 5px;
+	margin-bottom: 15px;       /*замерить точно в фотошоп*/
 }
 textarea[name="text"] {
 	height: 170px;
 	width: 500px;
 	border-radius: 5px;
+	margin-bottom: 15px;       /*замерить точно в фотошоп*/
+	padding-top: 10px;         /*расстояние от верх.края поля ввода до первой буквы текста, замерить точно в фотошоп*/
 }
+.colortext {
+	color: #445162;
+	padding-left: 10px;         /*расстояние от левого края поля ввода до первой буквы текста, замерить точно в фотошоп*/  
+	font-family: Arial;
+	font-size: 15px;           /*замерить точно в фотошоп*/
+}
+
 input[type="button"] {
 	height: 40px;
-	width: 140px;
+	width: 260px;              /*ширина кнопки Buy */
 	background: #fff;
+	color: #445162;
 	border-radius: 5px;
 	text-transform: uppercase;
 	outline: none; 
 	text-align: center;
+	margin-left: 20px;          /*левый отступ для кнопки Buy */
+	padding-bottom: 20px;  
 }
+
+/*отдельный стиль для кнопки Send*/
+#Send { 
+	height: 40px;
+	width: 140px;              /*ширина кнопки Send а у кнопок Buy ширина д.б. больше */
+	background: #fff;
+	color: #445162;
+	border-radius: 5px;
+	text-transform: uppercase;
+	outline: none; 
+	text-align: center;
+	margin-left: 180px;
+	padding-top: 10px;         /*текст кнопки Send по центру */
+}
+
 .ContactUs {
 	position: absolute;
 	height: 250px;
 	width: 238px;
 	margin-left: 743px;
 }
+.ContactUs p {
+	/*vertical-align: center;*/
+	font-size: 12px;
+	font-family: "Arial";
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.2;
+	padding-bottom: 20px;           /*замерить точно в фотошоп*/
+	margin-top: -5px;               /*замерить в фотошоп*/
+}
 .skype:before {
 	content: url("../img/skype.png");
-	margin: 5px;	
+	margin: 5px;	   
 }
 
 .icq:before {
@@ -411,7 +476,10 @@ input[type="button"] {
 	content: url("../img/phone.png");
 	margin: 5px;	
 }
-
+.socialbuttons {
+	padding-top: 30px;               /*замерить в фотошоп*/
+	padding-left: 5px;
+}
 
 .copyright {
 	width: 1180px;
